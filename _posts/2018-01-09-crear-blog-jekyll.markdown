@@ -12,7 +12,8 @@ Vamos a crear nuestro propio blog para **Windows** utilizando **Jekyll**. Jekyll
 
 Jekyll está escrito en lenguaje **Ruby**, por lo que también tendremos que instalar Ruby en nuestro equipo.
 
-##Instalación de Chocolatey
+**Instalación de Chocolatey**
+
 Empezaremos instalando el gestor de paquetes **Chocolatey**, necesario para crear nuestro blog. Chocolatey es la mejor forma para instalar Jekyll en Windows.
 
 Para ello, abriremos el **símbolo del sistema como administrador** e introduciremos las siguientes líneas:
@@ -21,7 +22,7 @@ Para ello, abriremos el **símbolo del sistema como administrador** e introducir
 @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1’))” && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 ```
 
-##Instalación de Ruby
+**Instalación de Ruby**
 
 Una vez se haya cargado, procedemos a la instalación de Ruby con:
 
@@ -49,7 +50,7 @@ gem install --local nombreDelArchivoCompleto
 
 Con esto se nos instalaría Ruby con la última versión. Podemos comprobar que se ha instalado correctamente y la versión que se nos ha instalado con `update_rubygems`
 
-##Instalación de Jekyll
+**Instalación de Jekyll**
 
 Ahora instalamos jekyll:
 
