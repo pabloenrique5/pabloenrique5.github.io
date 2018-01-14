@@ -5,7 +5,7 @@ permalink: ':title/'
 baseurl: "/" # the subpath of your site, e.g. /blog
 
 # Comments
-discus_identifier: pabloenrique5.github.io
+discus_identifier: https-pabloenrique5-github-io
 txtpen_identifier:
 
 # Social settings
