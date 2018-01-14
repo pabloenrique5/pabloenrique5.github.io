@@ -1,0 +1,83 @@
+---
+layout: post
+title:  "¿Qué es Git?"
+description: Breve explicación de Git, instalación en Windows y primeros pasos
+date: 2018-01-14 13:21:25 +0100
+categories: Git
+img: git.png
+author: Pablo Enrique
+---
+
+[Aprende JavaScript con MentoringJS - Pretraining Step 2](http://mentoringjs.com/)
+
+Git es un software de control de versiones. Lo utilizamos para tener un historial de los cambios que se van realizando en un proyecto y poder acceder a ellos. Permite a grupos de personas trabajar sobre los mismos documentos al mismo tiempo.
+
+A continuación se va a explicar cómo instalar **Git** en el sistema operativo **Windows**.
+
+**Instalación de Git**
+
+Tan solo tendremos que descargarnos la herramienta Git Bash de la página oficial de Git:
+
+[Descargar Git Bash](https://git-scm.com/download/win)
+
+Una vez descargado solo tenemos que aceptar toda la configuración por defecto y finalmente aparecerá el botón de *Install*.
+
+**Iniciarse con Git**
+
+Primero crearemos una carpeta en algún directorio de nuestro equipo, por ejemplo en C y la llamaremos "git". Ahora desde la terminal de Git Bash entramos en esta carpeta que acabamos de crear:
+
+```
+cd C:\git
+```
+Para iniciar un nuevo repositorio en esta carpeta utilizaremos el comando:
+
+```
+git init
+```
+Podemos ver el estado actual de nuestro proyecto con el comando:
+
+```
+git status
+```
+Para hacer una prueba, vamos a crear un fichero .txt con el bloc de notas. Dentro escribiremos, por ejemplo, "Esto es una prueba de git" y lo guardaremos en nuestra carpeta git con el nombre de prueba.txt.
+
+Si ahora volvemos a ejecutar el comando `git status` podremos ver cómo ha cambiado el estado de nuestro repositorio.
+
+Veremos que nos muestra que nuestro archivo preuba.txt está con estado "Untracked", es decir, que no se le está realizando un seguimiento. Para que lo haga utilizaremos el siguiente comando:
+```
+git add prueba.txt
+```
+Si quisiéramos añadir varios archivos del mismo tipo podemos utilizar el comando:
+```
+git add '*.txt'
+```
+Es importante no olvidar poner las comillas simples.
+
+Si una vez más ejecutamos el comando `git status` veremos como ahora sí lo hemos añadido. Ahora mismo nuestro archivo está en la denominada **Stagging Area** pero no están en nuestro repositorio todavía. Podríamos eliminar el archivo de esta área con `git reset prueba.txt`. Para subirlo a GitHub tendríamos que hacer un *commit* con una breve descripción de las cosas que hemos cambiado:
+```
+git commit -m "Añadimos un archivo de prueba"
+```
+
+Vamos a ver un registro de todos los cambios que hemos estado realizando. Con el comando `git log` podremos ver los *commits* que se han realizado y en el orden que se han hecho. Para poder subir estos cambios a GitHub (aquí supongo que ya disponemos de una cuenta en GitHub y si no es así hay que crearla) tendremos que añadirlos a un repositorio remoto.
+
+Ahora tendremos que acceder a nuestra cuenta de GitHub y crear un nuevo repositorio que llamaremos por ejemplo "prueba" y ejecutamos el siguiente comando:
+```
+git remote add origin https://github.com/nombregithub/prueba
+```
+Para subir nuestro repositorio local a GitHub ejecutaremos el siguente comando donde **origin** es el nombre del remoto y **master** el nombre de la rama por defecto. Con -u le decimos a Git que recuerde los parámetros por lo que la siguiente vez que ejecutemos este comando no hará falta volver a repetírselo:
+```
+git push -u origin master
+```
+Con esto ya habremos añadido el fichero prueba.txt a nuestro repositorio de GitHub.
+
+**Clonar repositorios de GitHub**
+
+Para poder visualizar bien los siguientes ejemplos iremos al repositorio prueba.txt accediendo desde GitHub y editaremos el archivo escribiendo "Esto es una prueba y ahora podremos ver cambios". Ahora vamos a volver a bajarnos el archivo desde GitHub para poder modificarlo y ver los cambios que se han realizado. Para ello, abrimos Git Bash y accedemos al directorio donde teníamos almacenado nuestro prueba.txt (hay que tener en cuenta que al bajarnos el archivo que se llama igual sobreescribirá en el ya teníamos). Una vez en ese directorio utilizamos el siguiente comando:
+```
+git pull origin master
+```
+Si se han realizado algunos cambios en el fichero lo veremos en la consola. Y si abrimos el fichero, veremos con los cambios realizados.
+
+**GitHub Desktop**
+
+Para todos aquellos que no quieran trabajar con la consola, existe una apliación para realizar los mimso que hemos estado haciendo pero de manera más visual. La podéis consultar desde [aquí](https://desktop.github.com/)
