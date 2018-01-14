@@ -1,5 +1,5 @@
 title: Pablo Enrique Fernández
-description: Mr.Brown is a responsive jekyll theme
+description: Blog personal de Pablo Enrique
 url: "pabloenrique5.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: ':title/'
 baseurl: "/" # the subpath of your site, e.g. /blog
@@ -14,3 +14,4 @@ facebook_url: https://facebook.com/
 googleplus_url: https://plus.google.com/
 instagram_url: https://instagram.com
 github_url: https://github.com/pabloenrique5
+linkedin_url: https://www.linkedin.com/in/pablo-enrique-fernandez/
