@@ -7,21 +7,16 @@
     <main role="main">
       <div class="page-container">
         {% if page.img %}
-         <img class="page-img" src={{ "/assets/images/Pablo-Enrique.jpg"}} alt="{{page.title}}">
+         <img class="page-img" src={{ "/assets/images/Pablo-Enrique.jpg" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
         {% endif %}
         <div class="page-content">
-          <section>
-            <p>
-              ¡Hola!, soy Pablo Enrique Fernández, creador de este blog y si sigues leyendo vas a saber algo más sobre mí (no hay nada de trolls, magos ni Star Wars).
-              Desde siempre me ha gustado mucho dibujar y las tecnologías, por lo que intentaba dedicar parte de mi tiempo libre a estas dos áreas.
-              Hasta que llegó el momento en el que tenía que decantarme por profundizar en algún sector que estuviera enfocado al dibujo o a las nuevas tecnologías y finalmente me decidí por el dibujo y el sector de la construcción. Estudié una FP Medio de Técnico en Acabados de Construcción y una FP Superior de Técnico Superior en Proyectos de Edificación, ambas correspondientes a la rama de Edificación y Obra Civil.
-              Tuve muchísimo acierto ya que acabé los estudios en medio de la crisis... y decidí que era un buen momento para seguir formándome, pero esta vez en nuevas tecnologías. Encontré una oferta de cursos de Telefónica llamado Empleo Digital en el que se ofertaban varios cursos relacionados con programación en diferentes tecnologías, que consistían básicamente en realizar una introducción a la programación a personas que tenían dificultades para encontrar empleo en sus sectores. Consideré que era una oportunidad magnífica para introducirme de lleno en el mundo de la programación y las nuevas tecnologías. Después de realizar entrevistas y pruebas fui uno de los seleccionados, así que decidí irme a Madrid con todo lo que suponía (ya que yo soy de Segorbe, Castellón) y empezar ese nuevo reto.
-              Realicé el curso de Desarrollo de Aplicaciones Móviles para Android e iOS, el cual duró aproximadamente 6 meses y en el que obtuve los conocimientos básicos sobre programación.
-              Seguí estudiando por mi cuenta otras tecnologías relacionadas con la programación que más me llamaban la atención como Java, JavaScript u Oracle.
-              A los pocos meses realicé una entrevista con la empresa tecnológica LucaTic de Madrid para un puesto de Programador Java Junior, en el que también se ofrecía una formación inicial. Después de pasar una serie de pruebas me aceptaron en este puesto y estuvieron formándome en JavaEE durante dos meses para en junio de 2017 incorporarme a la consultora tecnológica everis como Programador Junior. Mi trabajo actual consiste sobre todo en el manejo de una base de datos Oracle, con análisis de código PL/SQL y puntualmente análisis de código Java.
-              También, en paralelo a mi trabajo, estoy realizando el curso de mentoringjs de mano de Tomás Casquero, en el que estoy aprendiendo todo lo necesario para poder ser un buen Desarrollador JavaScript y, por otro lado, estudio inglés para en 2018 obtener el First Certificate de Cambridge.
-            </p>
-          </section>
+          <article>
+            <h1 class="page-title">{{page.title}}</h1>
+            {% if page.author %}
+            <div class="date-byline"><span><i class="fa fa-calendar-o" aria-hidden="true"></i> {{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span><span><i class="fa fa-pencil-square-o" aria-hidden="true"></i> {{page.author}}</span></div>
+            {% endif %}
+            {{page.content | markdownify}}
+          </article>
           {% include share.html %}
           {% include disqus.html %}
           {% include txtpen.html %}
