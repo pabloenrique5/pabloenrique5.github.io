@@ -38,7 +38,7 @@ Como en la ocasión anterior tendremos que introducir nuestro usuario y contrase
 
 Una vez con el SQL Developer abierto pulsamos en crear nueva conexión (el + que aparece arriba a la izquierda). En la ventana emergente tendremos que rellenar los campos. Por ejemplo, podemos poner como nombre de conexión y usuario “SYS”. **En la contraseña tendremos que poner la que pusimos al instalarnos Oracle Database 11g Express Edition**. En Rol seleccionaremos SYSDBA y le damos a probar. Veremos que en la parte inferior izquierda nos aparece "correcto".
 
-![No se puede cargar la imagen](site.baseurl/assets/images/oracle4.png)
+![No se puede cargar la imagen]({{ "assets/images/oracle4.png" | absolute_url }})
 
 A continuación, le damos a "Guardar" para que nos almacene esta conexión y le damos a "Conectar".
 Ahora tenemos que desbloquear el esquema **HR**. Para ello, escribiremos la siguiente sentencia en el editor y la ejecutaremos pulsando en el botón verde de *Play*:
@@ -47,7 +47,7 @@ Ahora tenemos que desbloquear el esquema **HR**. Para ello, escribiremos la sigu
 ALTER USER HR ACCOUNT UNLOCK IDENTIFIED BY HR
 ```
 
-![No se puede cargar la imagen](oracle5.png)
+![No se puede cargar la imagen]({{ "assets/images/oracle5.png" | site.baseurl }})
 
 Con esto habremos desbloqueado el esquema HR. En la sentencia anterior le hemos dicho que el usuario HR va a tener la contraseña HR. Ahora le volvemos a dar a establecer una nueva conexión, rellenamos los campos con HR y pulsamos en "Probar":
 
