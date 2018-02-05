@@ -28,7 +28,7 @@ Se nos descargará un archivo comprimido, lo descomprimimos, accedemos a la carp
 
 Para instalar el SQL Developer accederemos a la página oficial de Oracle haciendo clic [aquí](http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html).
 
-Tendremos que aceptar la licencia y ya podremos descargar una versión. Para que funcione SQL Developer tendremos que tener instalado el **JDK**, hay una de las opciones que ya trae instalado el JDK en el caso de que no lo tengamos instalado, pero si ya lo tenemos instalado nos descargaremos la versión que viene sin el JDK.
+Tendremos que aceptar la licencia y ya podremos descargar una versión. Para que funcione SQL Developer tendremos que tener instalado el **JDK**. Hay una de las opciones que lo incluye en el caso de no tenerlo instalado, pero si ya lo tenemos instalado nos descargaremos la versión que viene sin el JDK.
 
 ![No se puede cargar la imagen](/assets/images/oracle2.png)
 
@@ -40,7 +40,7 @@ Una vez con el SQL Developer abierto pulsamos en crear nueva conexión (el + que
 
 ![No se puede cargar la imagen](/assets/images/oracle4.png)
 
-A continuación, le damos a "Guardar" para que nos almacene esta conexión y le damos a "Conectar".
+A continuación, le damos a "Guardar" para que nos almacene esta conexión y hacemos clic en "Conectar".
 Ahora tenemos que desbloquear el esquema **HR**. Para ello, escribiremos la siguiente sentencia en el editor y la ejecutaremos pulsando en el botón verde de *Play*:
 
 ```
