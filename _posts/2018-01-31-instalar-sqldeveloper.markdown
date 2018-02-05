@@ -51,7 +51,7 @@ ALTER USER HR ACCOUNT UNLOCK IDENTIFIED BY HR
 
 Con esto habremos desbloqueado el esquema HR. En la sentencia anterior le hemos dicho que el usuario HR va a tener la contraseña HR. Ahora le volvemos a dar a establecer una nueva conexión, rellenamos los campos con HR y pulsamos en "Probar":
 
-![No se puede cargar la imagen](oracle6.png)
+![No se puede cargar la imagen](/assets/images/oracle6.png)
 
 Nos pondrá "Correcto" abajo a la izquierda, guardamos la conexión y pulsamos en "Conectar".
 Con esto ya tenemos el esquema HR para poder practicar.
