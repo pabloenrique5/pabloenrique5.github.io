@@ -17,12 +17,12 @@ En este artículo voy a explicar una serie de funciones que nos permitirán hace
 * Añadir o eliminar clases
 * Añadir o eliminar elementos HTML
 
-##**Seleccionar elementos HTML**
+**SELECCIONAR ELEMENTOS HTML**
 
 Seleccionar un elemento HTML es uno de los conceptos más sencillos y uno de los que más cosas nos permiten hacer.
 Tan solo necesitaremos dos métodos: ***querySelector*** y ***querySelectorAll***.
 
-###**querySelector**
+**querySelector**
 
 Con *querySelector* podremos seleccionar un elemento HTML. Devuelve el primer elemento del documento que coincida con los selectores que le hemos indicado. Hay que decir que los selectores son **selectores CSS**. La sintaxis es la siguiente:
 
@@ -51,7 +51,7 @@ var elemento = document.querySelector("div.uno input[name='dos']");
 
 En este ejemplo se seleccionará el primer elemento `<input name="dos">` que se encuentre dentro de `<div class="uno">`.
 
-###**querySelectorAll**
+**querySelectorAll**
 
 Con *querySelectorAll* obtenemos una ***NodeList*** estática con los elementos que han coincidido con los selectores indicados.
 
@@ -77,13 +77,13 @@ var coleccion = document.querySelectorAll('div.miClase, div.terceraClase');
 ```
 Como se ha explicado en el apartado de la *NodeList*, podríamos recorrer nuestra colección con `coleccion.forEach()`.
 
-##**Añadir o eliminar eventos de escucha**
+**AÑADIR O ELIMINAR EVENTOS DE ESCUCHA**
 
 Los eventos de escucha nos permiten realizar acciones con nuestro código. Se dispararán cuando el usuario interactúe con el DOM.
 
 Utilizaremos dos funciones: `addEventListener` y `removeEventListener`.
 
-###**Añadir eventos de escucha**
+**Añadir eventos de escucha**
 
 Para añadir un evento de escucha seleccionaremos un elemento HTML con las funciones que hemos visto anteriormente, y después llamaremos a la función `addEventListener`:
 
@@ -92,7 +92,7 @@ var elemento = document.querySelector('#selector');
 elemento.addEventListener('evento', callback);
 ```
 
-En este ejemplo *evento* es el tipo de evento que queremos que se lance, es decir, la acción que debe realizar el usuario para que se active. Hay muchos tipos de evento, [aquí](https://developer.mozilla.org/en-US/docs/Web/Events "") dejo un enlace donde podremos ver todos los eventos disponibles.
+En este ejemplo *evento* es el tipo de evento que queremos que se lance, es decir, la acción que debe realizar el usuario para que se active. Hay muchos tipos de evento, [aquí](https://developer.mozilla.org/en-US/docs/Web/Events) dejo un enlace donde podremos ver todos los eventos disponibles.
 
 *Callback* es la llamada a alguna de nuestras funciones donde especificaremos lo que queremos que ocurra cuando se ejecute el evento. Podemos ejecutar el *callback* llamando a otra función:
 
@@ -114,7 +114,7 @@ elemento.addEventListener('click', function(){
 });
 ```
 
-###**Eliminar eventos de escucha**
+**Eliminar eventos de escucha**
 
 Eliminar eventos de escucha es muy parecido a añadirlos:
 ```js
@@ -133,7 +133,7 @@ elemento.removeEventListener('click', saludo);
 
 En este ejemplo que acabamos de ver hay que tener en cuenta que una vez se elimine el evento no se volverá a disparar. Se debería eliminar el evento cuando ya no lo vayamos a utilizar más.
 
-##**Añadir o eliminar clases**
+**AÑADIR O ELIMINAR CLASES**
 
 Para añadir o eliminar clases utilizaremos los siguientes métodos: `classList.add()` y `classList.remove()`.
 
@@ -150,7 +150,7 @@ Y eliminaríamos la clase con:
 elemento.classList.remove('claseParaNav');
 ```
 
-##**Añadir o eliminar elementos HTML**
+**AÑADIR O ELIMINAR ELEMENTOS HTML**
 
 Para añadir un elemento solo necistaremos utilizar la función `document.create Element('element');`. Pero una vez está creado debemos hacer algo con él.
 
@@ -200,4 +200,4 @@ articulo.addEventListener('click', e => {
 });
 ```
 
-**[Aprende JavaScript con MentoringJS - Step 7](mentoringjs.com "")**
+**[Aprende JavaScript con MentoringJS - Step 7](mentoringjs.com)**
