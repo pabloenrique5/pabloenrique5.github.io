@@ -4,7 +4,7 @@ title:  "Solicitudes Ajax y objeto XMLHttpRequest"
 description: Cómo realizar solicitudes Ajax
 date: 2018-07-22 19:02:25 +0100
 categories: JavaScript, Ajax
-img: ajax.svg
+img: http.jpg
 author: Pablo Enrique
 ---
 
