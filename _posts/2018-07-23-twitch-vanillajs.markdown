@@ -8,7 +8,7 @@ img: twitch.jpg
 author: Pablo Enrique
 ---
 
-En este artículo vamos a reproducir un pequeño proyecto de Twitch con VanillaJS. Actualmente está programado con jQuery, asi que podremos ver las principales diferencias entre una de las librerías más populares y el JavaScript de toda la vida.
+En este artículo vamos a reproducir un pequeño proyecto de Twitch con VanillaJS. Actualmente está programado con jQuery, así que podremos ver las principales diferencias entre una de las librerías más populares y el JavaScript de toda la vida.
 
 **TWITCH CON JQUERY**
 
@@ -80,7 +80,7 @@ $(document).ready(function() {
 });
 ```
 
-Con este código visualizaremos una serie de canales de TwitchTV y si se encuentran online u offline. Es la siguiente:
+Con este código visualizaremos una página con una serie de canales de TwitchTV y si se encuentran online u offline. Es la siguiente:
 
 ![No se puede cargar la imagen](/assets/images/twitch1.png)
 
