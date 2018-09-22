@@ -82,7 +82,7 @@ $(document).ready(function() {
 
 Con este código visualizaremos una página con una serie de canales de TwitchTV y si se encuentran online u offline. Es la siguiente:
 
-![No se puede cargar la imagen](/assets/images/twitch1.png)
+![No se puede cargar la imagen](/assets/images/twitch1.PNG)
 
 A continuación vamos a ir paso a paso cambiando el código jQuery por el de Vanilla JS. Empecemos.
 
