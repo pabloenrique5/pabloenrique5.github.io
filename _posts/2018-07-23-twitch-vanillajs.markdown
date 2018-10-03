@@ -292,4 +292,4 @@ function getChannelInfo() {
 };
 ```
 
-**[Aprende JavaScript con MentoringJS - Step 7](mentoringjs.com)**
+**[Aprende JavaScript con MentoringJS - Step 7](http://mentoringjs.com/)**

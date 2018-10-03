@@ -11,11 +11,13 @@ author: Pablo Enrique
 
 Llamamos debuggear a la acción de analizar nuestro código para localizar errores que impiden la correcta funcionalidad del programa.
 
-Una de las formas más sencillas de realizar alguna prueba para comprobar si la información que estamos pasando o recibiendo es correcta es utilizando "alert". Esto mostrará una ventana emergente en el navegador con la información que el hayamos pasado:
+Una de las formas más sencillas de realizar alguna prueba para comprobar si la información que estamos pasando o recibiendo es correcta es utilizando "alert". Esto mostrará una ventana emergente en el navegador con la información que le hayamos pasado y un botón "Ok" para cerrarla:
 
 `alert("Esto es un alert");`
 
-Cuando se inerprete esta línea de código, aparecerá una ventana emergente con la información se le ha puesto en el interior de los paréntesis.
+También podemos utilizarlo simplemente por si queremos saber si hasta donde hemos colocado el "alert" llega correctamente el flujo de nuestro código.
+
+Cuando se interprete esta línea de código, aparecerá una ventana emergente con la información se le ha puesto en el interior de los paréntesis.
 Una particularidad que hay que tener en cuenta, es dónde ponemos los *alert*. Hay que tener cuidado de ponerlos en lugares donde no se vaya a ejecutar muchas veces el mismo trozo de código porque estará saltando continuamente y puede ser un estorbo.
 
 Una forma más avanzada de debuggear es con **Chrome Development Tools**. Tenemos varias formas de abrir esta herramienta:
@@ -24,7 +26,7 @@ Una forma más avanzada de debuggear es con **Chrome Development Tools**. Tenemo
 - En el navegador, accediendo a Opciones -> Más herramientas -> Herramientas para desarrolladores
 - Haciendo click derecho sobre la página -> Inspeccionar
 
-Una vez abierta la ventana para desarrolladores podremos colocarla donde queramos accediendo a la ventana a Opciones (tres puntos) y en *Dock side* podremos seleccionar la zona de la pantalla donde queremos colocar esta ventana.
+Una vez abierta la ventana para desarrolladores podremos colocarla donde queramos accediendo a la ventana de Opciones (tres puntos) y en *Dock side* podremos seleccionar la zona de la pantalla donde queremos colocar esta ventana.
 
 Si se ha producido algún error, lo veremos en la pestaña de *Source*, donde se mostrará el *html* que estamos *debuggeando*. Cuando localicemos el error, podremos ponernos encima de la "x" que aparecerá en la línea del error para ver por qué ha fallado.
 
