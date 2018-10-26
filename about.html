@@ -11,7 +11,7 @@ permalink: about/
     <main role="main">
       <div class="page-container">
         {% if page.img %}
-         <img class="page-img" src={{ "/assets/images/pablo.jpg" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
+         <img class="page-img" src={{ "/assets/images/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
         {% endif %}
         <div class="page-content">
           <article>
