@@ -17,7 +17,7 @@ Una de las formas más sencillas de realizar alguna prueba para comprobar si la 
 
 También podemos utilizarlo simplemente por si queremos saber si hasta donde hemos colocado el "alert" llega correctamente el flujo de nuestro código.
 
-Cuando se interprete esta línea de código, aparecerá una ventana emergente con la información se le ha puesto en el interior de los paréntesis.
+Cuando se interprete esta línea de código, aparecerá una ventana emergente con la información que se le ha puesto en el interior de los paréntesis.
 Una particularidad que hay que tener en cuenta, es dónde ponemos los *alert*. Hay que tener cuidado de ponerlos en lugares donde no se vaya a ejecutar muchas veces el mismo trozo de código porque estará saltando continuamente y puede ser un estorbo.
 
 Una forma más avanzada de debuggear es con **Chrome Development Tools**. Tenemos varias formas de abrir esta herramienta:
@@ -43,9 +43,11 @@ El valor de *$_* ahora pasaría a ser 2.
 
 Hay otras muchas más funciones que se pueden utilizar para sacarle más rendimiento en [este enlace](https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3).
 
-También podemos introducir datos directamente en la consola si en la página que estamos debuggeando introducimos "console.log("Texto que queremos mostrar")"
+También podemos introducir datos directamente en la consola si en la página que estamos debuggeando introducimos "console.log("Texto que queremos mostrar");".
 
-Para código complejo, lo más adecuado es utilizar *breakpoints* llamando a **debugger;**.
-Se abrirá una ventana y podremos seguir el flujo del programa línea a línea viendo en todo momento los valores con los que se está trabajando.
+En la pestaña **Network** podremos medir los tiempos de carga de los recursos.
+
+Para código complejo, lo más adecuado es utilizar *breakpoints* llamando a `debugger;`.
+Si introducimos esto en nuestro código, cuando el flujo llegue a ese punto se abrirá una ventana y podremos seguir el flujo del programa línea a línea viendo en todo momento los valores con los que se está trabajando.
 
 Este es solo un breve resumen de lo que podemos encontrar en [este enlace](http://juliepagano.com/blog/2014/05/18/javascript-debugging-for-beginners/) al blog de **Julie Pagano**.
