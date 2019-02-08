@@ -13,26 +13,26 @@ Vamos a crear lo que sería uno de los posibles diagramas de secuencia que se po
 
 Lo primero que hace el código una vez se carga la página, es llamar a la función `getChannelInfo()`. Por lo tanto, ya sabemos que de momento podemos tener dos participantes: el navegador y la función getChannelInfo().
 
-![No se puede cargar la imagen](/assets/images/diagrama1.PNG)
+![No se puede cargar la imagen](/assets/images/diagrama1.png)
 
 A continuación, se obtiene un canal de una lista de canales. Creamos el objeto XMLHttpRequest y con él llamamos a la función `makeUrl()` para crear la url y pedir una serie de datos al servidor.
 
-![No se puede cargar la imagen](/assets/images/diagrama2.PNG)
+![No se puede cargar la imagen](/assets/images/diagrama2.png)
 
 Si la llamada al servidor va bien y nos devuelve los datos que esperamos volveremos a hacer otra llamada para solicitar el resto de datos para completar la información que queremos mostrar. Devolveremos el canal completo al navegador para que lo muestre.
 
-![No se puede cargar la imagen](/assets/images/diagrama3.PNG)
+![No se puede cargar la imagen](/assets/images/diagrama3.png)
 
 Todas estas operaciones que hemos hecho para obtener la información completa de un canal hay que hacerlas por cada canal de los que tenemos en la lista, por lo que introduciremos las operaciones en un *loop*.
 
-![No se puede cargar la imagen](/assets/images/diagrama4.PNG)
+![No se puede cargar la imagen](/assets/images/diagrama4.png)
 
 Con la página ya formada solo queda dejar que interactúe el usuario y aplicar los diferentes estilos en función de la elección del usuario.
 
-![No se puede cargar la imagen](/assets/images/diagrama5.PNG)
+![No se puede cargar la imagen](/assets/images/diagrama5.png)
 
 Ya estaría terminado nuestro diagrama. Como ya he dicho antes, hay varias formas de representarlo y esta es solo una de ellas.
 
 El diagrama nos habrá quedado de la siguiente manera:
 
-![No se puede cargar la imagen](/assets/images/diagrama6.PNG)
+![No se puede cargar la imagen](/assets/images/diagrama6.png)
