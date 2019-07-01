@@ -23,7 +23,7 @@ La aplicación mostrará una interfaz muy sencilla y accesible a todas sus difer
 
 Mostrará un panel principal donde se verán publicadas noticias, comentarios o fotos que vayan añadiendo los componentes de de la asociación.
 
-![No se puede cargar la imagen](/assets/images/prototipo1.PNG =273x470)
+<img src="/assets/images/prototipo1.PNG" alt="prototipo1" width="273" height="470"/>
 
 Desde el botón de "Nuevo Artículo" podremos añadir nuevos artículos para que los puedan visualizar el resto de componentes de la asociación.
 
