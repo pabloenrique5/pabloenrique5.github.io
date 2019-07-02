@@ -4,7 +4,7 @@ title:  "Prototipo"
 description: Prototipo de aplicación administrativa "Tachán"
 date: 2019-06-24 18:45:25 +0100
 categories: Ratchet
-img: secuencias.PNG
+img: prototipo.png
 author: Pablo Enrique
 ---
 [Aprende JavaScript con MentoringJS - Step 9](http://mentoringjs.com/)
