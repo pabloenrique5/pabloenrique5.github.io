@@ -4,7 +4,7 @@ title:  "Diagrama de secuencia"
 description: Diagrama de secuencia aplicado al proyecto TwitchTv
 date: 2019-02-06 18:45:25 +0100
 categories: JavaScript
-img: diagrama.png
+img: secuencias.png
 author: Pablo Enrique
 ---
 [Aprende JavaScript con MentoringJS - Step 8](http://mentoringjs.com/)
