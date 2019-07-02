@@ -71,4 +71,4 @@ Habrá también un buscador en la parte superior donde podremos buscar por nombr
 
 Al dar de alta un usuario se mostrará una ventana donde podremos introducir el nombre de usuario, el password inicial y el rol que va a ocupara en la aplicación. Los roles serán administrador y usuario.
 
-Con la ayuda de **mentoringjs** iré creando poco a poco mi propia app. Estará programada con **ReactJS**e iré publicando cada paso de la construcción de la app [aquí](https://github.com/pabloenrique5/tachan).
+Con la ayuda de **mentoringjs** iré creando poco a poco mi propia app. Estará programada con **ReactJS** e iré publicando cada paso de la construcción de la app [aquí](https://github.com/pabloenrique5/tachan).
